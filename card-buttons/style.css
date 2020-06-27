@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 1.2rem;
+    --base-color: #596563;
+    --base-padding: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+.flex.between {
+    justify-content: space-between;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    background-color: var(--base-color);
+    padding: var(--base-padding) 0;
+}
+
+.container {
+    background-color: #53615F;
+    width: 98%;
+    max-width: 1245px;
+    border-radius: 15px;
+    position: relative;
+    padding: var(--base-padding) 0;
+}
+
+.creators, .post, .premium {
+    background: #E6EBEB;
+    box-shadow: 0px 25px 34px #33413F;
+    border-radius: 10px;
+    padding: var(--base-padding);
+    margin: 1em;
+    width: 90%;
+}
+
+.post {
+    max-width: 372px;
+    height: 326px;
+}
+
+.premium {
+    max-width: 400px;
+    height: 151px;
+}
+
+.creators {
+    max-width: 472px;
+}
+
+
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+
+.subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #596563;
+    margin-bottom: 0.8em;
+    width: 70%;
+}
+
+.creators .list {
+    margin: 1.5em auto;
+}
+
+.creator {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0.6em auto;
+    min-height: 50px;
+}
+.creator img {
+    max-width: 76px;
+    max-height: 76px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.creator .detail {
+    width: 65%;
+    margin: 0 .5em;
+}
+
+.detail .name {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.detail .status {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.join {
+    background-color: #f1f1f1;
+    font-size: 0.7rem;
+    color: #000000;
+    padding: 1.2em;
+    border: none;
+    box-shadow: 0px 1px 1px #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: background-color 0.7s ease-in-out;
+    text-align: center;
+    font-weight: 600;
+}
+
+.join:hover {
+    background-color: #ffffff;
+}
+
+.join.dark {
+    background-color: #596563;
+    color: white;
+}
+
+.join.dark:hover {
+    background-color: #252c2b;
+}
+
+.join.bigger {
+    width: 200px;
+    margin: 0.3em auto;
+}
